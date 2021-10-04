@@ -1,0 +1,1002 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Poppins;
+    scroll-behavior:smooth;
+    
+}
+
+hr{
+    border: 2px dotted rgb(226, 168, 59);
+    
+}
+
+body{
+    min-height: 1000px;
+}
+
+p{
+    font-weight: 300;
+    color:white;
+}
+
+
+.background{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url(Pictures/Spices.jpg)  ;
+    background-size: cover;
+}
+
+background.content{
+    max-width: 900px;
+    text-align: center;
+
+}
+
+.background .content h2 {
+    text-align: center;
+    font-size: 4em;
+    color: white;
+}
+
+.background .content p{
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.background .content a{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.btn{
+    font-size: 300;
+    color: white;
+    background:rgb(233, 206, 86);
+    display:inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    margin-left: 350px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.btnMenu{
+  font-size: 300;
+  color: white;
+  background:rgb(233, 206, 86);
+  display:inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  margin-left: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+.btnMenu:hover{
+    
+  letter-spacing: 10px;
+  border-radius: 80px;
+  text-align: center;
+  border:orangered solid 3px;
+}
+   
+.btn:hover{
+    
+    letter-spacing: 10px;
+    border-radius: 80px;
+    text-align: center;
+    border:orangered solid 3px;
+}
+
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100px;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    transition:  0.5;
+    
+}
+
+header.sticky{
+    background:rgba(128, 128, 0, 0.863);
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px orangered;
+}
+    
+header .logo{
+    color:orange;
+    font-weight: 600;
+    font-size: 3em;
+    text-decoration: none;
+    margin-left: -70px;
+}
+header .sticky .logo{
+    color:black;
+}
+
+header .logo span{
+    color:orangered;
+}
+
+header .navbar{
+    position: relative;
+    display: flex;
+}
+
+header .navbar li{
+    list-style: none;
+    margin-left: 50px;
+    margin-top:10px;
+}
+
+header .navbar li a{
+    text-decoration: none;
+    font-weight: 600;
+    color:whitesmoke;
+    border-radius: 10px;
+}
+
+header.sticky .navbar li a{
+    color:orangered;
+}
+ 
+header.sticky .navbar a:hover{
+color: rgba(223, 93, 46, 0.712);
+border-radius: 10px;
+
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background:rgba(238, 176, 118, 0.801);
+  color:orangered;
+}
+
+/*-------------LOGIN BUTTON STYLING STARTS HERE---------------*/
+
+.btnLogin{
+  color: black; 
+  outline:none;
+  background: transparent;
+  border-radius: 15px;
+  letter-spacing: 0.0625em;
+  padding: 8px 10px; 
+  font: bold 19px 'Bitter', poppins; 
+  line-height: 2;
+  position: relative;
+	display: inline-block;
+  margin-right: -110px;
+  margin-top:20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+	text-decoration: none; 
+  overflow: hidden;
+  transition: all .5s;
+  width: 110px;
+  height:60px;
+}
+
+/* //// Default effect: Slide from Top  //// */
+
+.btnLogin:before,
+.btnLogin:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: orangered; /* onhover background color */
+  z-index: -1;
+  transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
+  transition: all .5s;
+}
+
+.btnLogin:before{
+  background: rgb(233, 206, 86); /* button default background color */
+  z-index: -2;
+  transform: translate3D(0,0,0);
+}
+
+.btnLogin:hover{
+	color: white;
+}
+
+.btnLogin:hover:after{
+  transform: translate3D(0,0,0);
+  transition: all .9s;
+}
+
+
+
+/*------------------- LOGIN BUTTON STYLING ENDS HERE--------------*/
+
+section{
+    padding: 100px;
+
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    
+}
+
+.row .col50{
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.row .col50 h2{
+    margin-bottom: 20px;
+}
+
+.tittleText{
+    color:black;
+    font-size: 2em;
+    font-weight: 300px;
+    text-transform: capitalize;
+
+}
+
+h2 :first-child{
+    color:orangered;
+}
+
+.row .col50 .imgBx{
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+
+}
+
+.row .col50 .imgBx img{
+    position: absolute;
+    image-orientation: 0, 0, 100% 100%;
+    object-fit: cover;
+
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+/* ABOUT US Page Styling 2nd Page Styling */
+
+.about{
+    background-color: rgba(222, 184, 135, 0.527);
+}
+
+/* Designing for CUBE Starts here */
+
+.scene {
+    -webkit-perspective: 600px;
+            perspective: 600px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-size: 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .scene:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+
+  .scene:hover .side {
+    opacity: 1;
+  }
+
+  .cube {
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    -webkit-animation: rotate 15s ease-in-out infinite;
+            animation: rotate 15s ease-in-out infinite;
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+  }
+  .side {
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    background-color:orange;
+    opacity: .95;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .back {
+    -webkit-transform: translateZ(-150px) rotateX(180deg);
+            transform: translateZ(-150px) rotateX(180deg);
+    background-image: url(Pictures//Chicken\ Curry.jpeg);
+  }
+  .left {
+    -webkit-transform: translateX(-150px) rotateY(90deg);
+            transform: translateX(-150px) rotateY(90deg);
+    background-image: url(Pictures//Chickpea\ curry\ with\ Puries.jpg);
+  }
+   
+  .right {
+    -webkit-transform: translateX(150px) rotateY(90deg);
+            transform: translateX(150px) rotateY(90deg);
+    background-image: url(Pictures//Goat\ curry\ and\ rice.jpg);
+  }
+  .top {
+    -webkit-transform: translateY(-150px) rotateX(90deg);
+            transform: translateY(-150px) rotateX(90deg);
+    background-image: url(Pictures//Lentil\ and\ roti.jpeg);
+  }
+   
+  .bottom {
+    -webkit-transform: translateY(150px) rotateX(270deg);
+            transform: translateY(150px) rotateX(270deg);
+    background-image: url(Pictures//Thali.jpg);
+  }
+  .front {
+    -webkit-transform: translateZ(150px);
+            transform: translateZ(150px);
+    background-image: url(Pictures/menu1.jpeg);
+  }
+  @-webkit-keyframes rotate {
+    0% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+    }
+    12.5% {
+      -webkit-transform: rotateY(90deg);
+              transform: rotateY(90deg);
+    }
+    25% {
+      -webkit-transform: rotateY(270deg);
+              transform: rotateY(270deg);
+    }
+    37.5% {
+      -webkit-transform: rotateY(270deg);
+              transform: rotateY(270deg);
+    }
+    50% {
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+    }
+    62.5% {
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg);
+    }
+    75% {
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg);
+    }
+    87.5% {
+      -webkit-transform: rotateX(270deg);
+              transform: rotateX(270deg);
+    }
+    100% {
+      -webkit-transform: rotateX(360deg);
+              transform: rotateX(360deg);
+    }
+  }
+   
+  @keyframes rotate {
+    0% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+    }
+    12.5% {
+      -webkit-transform: rotateY(90deg);
+              transform: rotateY(90deg);
+    }
+    25% {
+      -webkit-transform: rotateY(270deg);
+              transform: rotateY(270deg);
+    }
+    37.5% {
+      -webkit-transform: rotateY(270deg);
+              transform: rotateY(270deg);
+    }
+    50% {
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+    }
+    62.5% {
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg);
+    }
+    75% {
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg);
+    }
+    87.5% {
+      -webkit-transform: rotateX(270deg);
+              transform: rotateX(270deg);
+    }
+    100% {
+      -webkit-transform: rotateX(360deg);
+              transform: rotateX(360deg);
+    }
+  }
+
+  /* Cube Styling Ends here */
+
+/* 3rd Page */
+/* 3rd Page */
+
+.menu{
+    background-color: rgba(222, 184, 135, 0.527);
+}
+
+/* Menu Page */
+
+.image-list-small {
+    font-family:Poppins;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 640px;
+    padding: 0;
+  }
+  .image-list-small li {
+    display: inline-block;
+    width: 180px;
+    margin: 0 12px 30px;
+  }
+  .image-list-small li > a {
+    display: block;
+    text-decoration: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 175px;
+    margin:0;
+    padding: 0;
+    border: 3px solid orange;
+    border-radius: 15px;
+    box-shadow: 0 3px 5px orangered;
+    transition: .25s;
+  }
+  .image-list-small li img{
+    width: 100%;                          /* To make the images responsive */
+    height: auto;
+    
+}
+.image-list-small li > a:hover{
+    transform: scale(1.2);
+    transition: .30s;
+}
+.image-list-small .details {
+    margin-top: 13px;
+  }
+  .image-list-small .details h3 {
+    display: block;
+    font-size: 14px;
+    margin: 0 0 3px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .image-list-small .details h3 a {
+    color: #303030;
+    text-decoration: none;
+  }
+  .image-list-small .details .Price {
+    display: block;
+    color: #717171;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+  }
+  @media only screen and (max-wdith: 640px){
+    .image-list-small{
+       max-width: 100%;
+     }
+    .image-list-small li > a {
+       width: 50%;
+     }
+    }
+
+/* Fourth Page*/
+
+/* Fourth Page*/
+
+.team{
+    background-color: rgba(222, 184, 135, 0.527);
+    
+}
+.services{
+	width:100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.s-heading{
+	text-align:center;
+}
+.s-heading h1{
+	color:black;
+	font-size: 3rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin: 0px;
+}
+.s-heading p{
+	color: black;
+	font-size: 1rem;
+	margin: 5px;
+	text-align: center;
+}
+.s-box-container{
+	width:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.s-box{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+  width:300px;
+	padding: 20px 25px;
+	height: 400px;
+	box-sizing: border-box;
+	margin: 30px;
+	position: relative;
+  box-shadow: 1px 5px 9px rgba(214, 76, 12, 0.753);
+  
+}
+.s-box img{
+	height: 130px;
+  border: orangered solid 2px;
+  border-radius: 12px;
+}
+.s-box h1{
+	color:#0d0d0e;
+	letter-spacing: 1px;
+	font-size: 1.5rem;
+	margin-bottom: 8px;
+	
+}
+.s-box p{
+	color: black;
+	text-align: center;
+}
+.s-btn{
+	width: 140px;
+	height: 40px;
+	border-radius: 20px;
+	border:orangered solid 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:black;
+	margin-top:10px; 
+}
+.bar{
+	width: 100px;
+	height: 6px;
+	position: absolute;
+	left: 50%;
+	top: 0%;
+	transform: translateX(-50%);
+	background-color:orangered; 
+	border-radius: 0px 0px 10px 10px;
+	display: none;
+	animation: bar 0.5s;
+}
+.s-box:hover{
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.08);
+	transition: all ease 0.3s;
+}
+.s-btn:hover{
+	background-color:orange;
+	border: 1px solid orangered;
+	color:#FFFFFF;
+	transition: all ease 0.3s;
+}
+.s-box:hover .bar{
+	display: block;
+}
+@keyframes bar{
+	0%{
+		width:0px;
+	}
+	100%{
+		width:100px;
+	}
+}
+@media(max-width:1050px){
+	.s-box-container{
+		flex-wrap: wrap;
+		
+	}	
+	.services{
+		height: auto;
+	}
+	.s-heading{
+		margin: 15px;
+	}
+	.s-box{
+		flex-grow: 1;
+	}
+	
+}
+
+
+
+
+/* 5th Page*/
+/* 5th Page*/
+
+.review{
+    background-color: rgba(222, 184, 135, 0.527);
+}
+ 
+
+.clientReview{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.clientReview .box{
+  background:rgba(255, 166, 0, 0.13);
+  width: calc(33% - 10px);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(214, 76, 12, 0.753);
+}
+.clientReview .box i.quote{
+  font-size: 20px;
+  color: orangered;
+}
+.clientReview .box .content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.box .info .name{
+  font-weight: 600;
+  font-size: 17px;
+}
+.box .info .job{
+  font-size: 16px;
+  font-weight: 500;
+  color: orange;
+}
+.box .info .stars{
+  margin-top: 2px;
+}
+.box .info .stars i{
+  color: orange;
+}
+.box .content .image{
+  height: 100px;
+  width: 100px;
+  padding: 2px;
+  background: orange;
+  border-radius: 10%;
+}
+.content .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0, 0.349);
+  
+}
+.box:hover .content .image img{
+  border-color:orangered;
+  transition: all 1s ease-in 0s;
+}
+
+.box:hover {
+  cursor: default;
+  background-color: rgba(255, 68, 0, 0.226);
+  transform: rotate(360deg);
+  transition: all 1s ease-in 0s;
+  
+}
+@media (max-width: 1045px) {
+  .clientReview .box{
+    width: calc(50% - 10px);
+    margin: 10px 0;
+  }
+}
+@media (max-width: 702px) {
+  .clientReview .box{
+    width: 100%;
+  }
+}
+
+
+
+
+  /* LAST PAGE*/
+
+  .contact{
+    background-color: rgba(222, 184, 135, 0.527);
+  }
+
+  * {
+    box-sizing: border-box;
+    
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 3px solid orange;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-radius: 15px;
+  }
+  
+  input[type=submit] {
+    background-color:rgba(255, 153, 0, 0.637);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+  }
+  
+  input[type=submit]:hover {
+    background-color:rgba(226, 155, 24, 0.733);
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 15px;
+    background-color: rgba(236, 177, 68, 0.212);
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(224, 79, 12, 0.753);
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+    font-weight: 400;
+    font-family: poppins;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+
+  /* Submit button styling*/
+   /* Submit button styling*/
+    /* Submit button styling*/
+
+
+
+.buttonfx{
+  color: black; /* button text color */
+  outline:none;
+  background: transparent;
+  border-radius: 15px;
+  border: 4px solid orange;
+  letter-spacing: 0.0625em;
+  padding: 8px 10px; 
+  text-transform: uppercase;
+  font: bold 19px 'Bitter', poppins; /* use google font */
+  line-height: 2;
+  position: relative;
+	display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+	text-decoration: none; /* remove underline if using A instead of BUTTON tag */
+  overflow: hidden;
+  transition: all .5s;
+  width: 150px;
+}
+
+/* //// Default effect: Slide from Top  //// */
+
+.buttonfx:before,
+.buttonfx:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: orange; /* onhover background color */
+  z-index: -1;
+  transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
+  transition: all .5s;
+}
+
+.buttonfx:before{
+  background: #fafcd6; /* button default background color */
+  z-index: -2;
+  transform: translate3D(0,0,0);
+}
+
+.buttonfx:hover{
+	color: white;
+}
+
+.buttonfx:hover:after{
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+
+#aboutUs{
+  
+  border-radius: 10px;
+  border:rgb(233, 206, 86) solid 10px;
+  
+}
+/*Login Button coding*/
+
+#login{
+  background:url(Pictures/Spices.jpg)  ;
+  background-size: cover;    
+}
+ 
+.login-card {
+  width: 400px;
+  background-color: gainsboro;
+  margin: 0px auto ;
+  border-radius: 9px;
+  box-shadow: 0px 8px 10px orangered;
+  min-height:440px;
+ 
+}
+
+.log_head{ 
+  background:rgba(255, 166, 0, 0.705); 
+  width:400px; 
+  height:80px; 
+  border-radius:10px;
+ }
+
+.login-card h1 {
+  text-align: center;
+  font-family:poppins;
+  font-weight: 600;
+  color:orangered;
+  font-size:20px;
+  line-height:27px;
+  padding-top: 24px;
+  
+}
+
+
+.log_body{ 
+  padding:40px 20px 20px 20px;
+}
+
+.log_user{ 
+  background:#FEFEFE; 
+  color:#999999; 
+  border-radius: 10px; 
+  width:350px; 
+  height:35px;
+  padding:5px; 
+  font-family:poppins; 
+  font-weight:600; 
+  font-size:15px; 
+  border: 3px solid orange;
+
+}
+
+.log_Pass{
+  background:#FEFEFE; 
+  color:gray; 
+  border-radius: 12px; 
+  width:350px; 
+  height:35px; 
+  padding:5px; 
+  font-family:poppins; 
+  font-weight:600; 
+  font-size:15px; 
+  border: 3px solid orange;
+}
+
+
+.login-submit{ 
+  background:orange; 
+  border-radius: 10px; 
+  width:359px; 
+  height:36px; 
+  cursor:pointer; 
+  font-family:poppins; 
+  font-weight:600; 
+  font-size:15px; 
+  color:#FFFFFF; 
+}
+.login-submit:hover{
+  border-color:orangered;
+}
+
+.log_body a{ 
+  text-decoration:none; 
+  color:orangered; 
+  font-family:open Sans; 
+  font-weight:800; 
+  font-size:15px; 
+  line-height:21px;
+}
+
+
+  
+  
+  
+  
